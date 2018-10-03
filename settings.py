@@ -21,7 +21,7 @@ class Config(object):
         host='127.0.0.1',
         port=3306,
         user='root',
-        password='qszaw123',
+        password='*',
         database='blog',
         charset='utf8'
     )
