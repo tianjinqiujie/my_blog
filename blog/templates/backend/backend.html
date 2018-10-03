@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+    <title>Nice responsive template for blogger</title>
+    <!-- BOOTSTRAP CORE STYLE -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet"/>
+    <!-- FONT AWESOME ICON STYLE -->
+    <link href="/static/css/font-awesome.css" rel="stylesheet"/>
+    <!-- CUSTOM STYLE CSS -->
+    <link href="/static/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <a href="/backend/add_article/" >增加文章</a>
+<div class="article_list small">
+
+    <table class="table table-hover table-striped">
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>标题</th>
+            <th>时间</th>
+            <th>操作</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for article in data_list %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ article.title }}</td>
+                <td>{{ article.create_time }}</td>
+                <td><a href="/backend/edit_article/{{ article.id }}">编辑</a></td>
+                <td><a class="delete_article" id="{{ article.id }}" href="javascript:void(0)">删除</a></td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+</div>
+    </div>
+</div>
+
+
+<!-- END FOOTER SECTION -->
+<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME -->
+<!-- CORE JQUERY -->
+<script src="/static/js/jquery.js"></script>
+<!-- BOOTSTRAP SCRIPTS -->
+<script src="/static/js/bootstrap.js"></script>
+
+    <script>
+
+
+
+    $(".delete_article").click(function () {
+        var $del = $(this).parent().parent();
+        var del_id = $(this).attr('id');
+        var arti_del_id = {"article_id":del_id};
+        $.ajax({
+            url:"/backend/delete_article/",
+            type: 'POST',
+            data: JSON.stringify(arti_del_id),
+            success:function (arg) {
+                $del.after().html(arg).css('color','red');
+            }
+        })
+    })
+
+    </script>
+
+
+</body>
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+    <title>Nice responsive template for blogger</title>
+    <!-- BOOTSTRAP CORE STYLE -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet"/>
+    <!-- FONT AWESOME ICON STYLE -->
+    <link href="/static/css/font-awesome.css" rel="stylesheet"/>
+    <!-- CUSTOM STYLE CSS -->
+    <link href="/static/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <form action="" method="post">
+            <div class="add_article">
+                <div class="alert-success text-center">编辑文章</div>
+                <div class="add_article_region">
+                    <div class="title form-group">
+                        <label for="">标题</label>
+                        <div>
+                            <input class="form-control" type="text" name="title" value="{{ article_obj.title }}">
+                        </div>
+                    </div>
+
+                    <div class="content form-group">
+                        <label for="">内容(Kindeditor编辑器，不支持拖放/粘贴上传图片) </label>
+                        <div>
+                        <textarea name="content" id="article_content" cols="30"
+                                  rows="10">{{ article_obj.content }}</textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <hr>
+                        <p class="text-danger">分类：</p>
+                        <ul>
+                            {% for cate in cate_list %}
+                                {% if cate.title == article_obj.title2 %}
+                                    <li>{{ cate.title }}<input type="radio" name="cate" checked="checked"
+                                                               value="{{ cate.id }}"></li>
+                                {% else %}
+                                    <li>{{ cate.title }}<input type="radio" name="cate" value="{{ cate.id }}"></li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                        <hr>
+                    </div>
+                    <input type="submit" class="btn btn-default">
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+<script charset="utf-8" src="/static/kindeditor/kindeditor-all.js"></script>
+<script>
+    KindEditor.ready(function (K) {
+        window.editor = K.create('#article_content', {
+            width: 1168,
+            height: 600,
+            resizeType: 0,
+            uploadJson: "/upload/",
+            extraFileUploadParams: {
+                {#csrfmiddlewaretoken: $("[name='csrfmiddlewaretoken']").val()#}
+            },
+            filePostName: "upload_img"
+        });
+    });
+</script>
+
+
+</body>

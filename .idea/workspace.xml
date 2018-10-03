@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dcd36027-a31e-423a-998f-b308447445a9" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/blog$blog.coverage" NAME="blog Coverage Results" MODIFIED="1538396780844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/blog$manage.coverage" NAME="manage Coverage Results" MODIFIED="1538553609449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog/views/index.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="25" column="65" lean-forward="false" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+              <folding>
+                <element signature="e#0#78#0" expanded="true" />
+                <marker date="1538558397731" expanded="true" signature="329:393" ph="select id,ti... article" />
+                <marker date="1538558397731" expanded="true" signature="465:509" ph="select id,ti... article" />
+                <marker date="1538558397731" expanded="true" signature="555:808" ph="SELECT A.id,... id" />
+                <marker date="1538558397731" expanded="true" signature="669:733" ph="SELECT id,ti... article" />
+                <marker date="1538558397731" expanded="true" signature="849:973" ph="SELECT count... article" />
+                <marker date="1538558397731" expanded="true" signature="1058:1086" ph="SELECT COUNT... article" />
+                <marker date="1538558397731" expanded="true" signature="1584:1637" ph="select id fr... user" />
+                <marker date="1538558397731" expanded="true" signature="1951:2190" ph="SELECT A.id,... id" />
+                <marker date="1538558397731" expanded="true" signature="2051:2115" ph="SELECT id,ti... article" />
+                <marker date="1538558397731" expanded="true" signature="2240:2493" ph="SELECT A.id,... id" />
+                <marker date="1538558397731" expanded="true" signature="2354:2418" ph="SELECT id,ti... article" />
+                <marker date="1538558397731" expanded="true" signature="2534:2658" ph="SELECT count... article" />
+                <marker date="1538558397731" expanded="true" signature="2741:2769" ph="SELECT COUNT... article" />
+                <marker date="1538558397731" expanded="true" signature="3201:3287" ph="SELECT id,ti... article" />
+                <marker date="1538558397731" expanded="true" signature="3201:3289" ph="SELECT id,ti... article" />
+                <marker date="1538558397731" expanded="true" signature="3339:3592" ph="SELECT A.id,... id" />
+                <marker date="1538558397731" expanded="true" signature="3453:3517" ph="SELECT id,ti... article" />
+                <marker date="1538558397731" expanded="true" signature="3633:3757" ph="SELECT count... article" />
+                <marker date="1538558397731" expanded="true" signature="3840:3868" ph="SELECT COUNT... article" />
+                <marker date="1538558397731" expanded="true" signature="4247:4292" ph="SELECT title... article" />
+                <marker date="1538558397731" expanded="true" signature="4341:4594" ph="SELECT A.id,... id" />
+                <marker date="1538558397731" expanded="true" signature="4455:4519" ph="SELECT id,ti... article" />
+                <marker date="1538558397731" expanded="true" signature="4635:4759" ph="SELECT count... article" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/views/account.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-220">
+              <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="27" />
+              <folding>
+                <marker date="1538553804452" expanded="true" signature="433:473" ph="SELECT id,ti... article" />
+                <marker date="1538553804452" expanded="true" signature="737:763" ph="DELETE FROM article... " />
+                <marker date="1538553804452" expanded="true" signature="737:768" ph="DELETE FROM article... " />
+                <marker date="1538553804452" expanded="true" signature="1346:1375" ph="SELECT id,ti... category" />
+                <marker date="1538553804452" expanded="true" signature="1859:1930" ph="INSERT INTO ARTICLE... " />
+                <marker date="1538553804452" expanded="true" signature="2166:2323" ph="SELECT A.id,... id" />
+                <marker date="1538553804452" expanded="true" signature="2166:2377" ph="SELECT A.id,... id" />
+                <marker date="1538553804452" expanded="true" signature="2166:2386" ph="SELECT A.id,... id" />
+                <marker date="1538553804452" expanded="true" signature="2247:2323" ph="SELECT id,ti... article" />
+                <marker date="1538553804452" expanded="true" signature="2425:2454" ph="SELECT id,ti... category" />
+                <marker date="1538553804452" expanded="true" signature="2937:3009" ph="UPDATE article... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="CSS File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>bootstrap.css.map</find>
+      <find>fetch_all_2</find>
+      <find>page</find>
+      <find>?</find>
+      <find>query_params</find>
+      <find>print</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/static/css/font-awesome.css" />
+        <option value="$PROJECT_DIR$/static/js/jquery-1.11.1.js" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/css/common.css" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/blog.py" />
+        <option value="$PROJECT_DIR$/setting.py" />
+        <option value="$PROJECT_DIR$/blog/views/login.py" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/blog/__init__.py" />
+        <option value="$PROJECT_DIR$/blog/templates/backend/base.html" />
+        <option value="$PROJECT_DIR$/blog/utils/md5.py" />
+        <option value="$PROJECT_DIR$/settings.py" />
+        <option value="$PROJECT_DIR$/blog/templates/right_menu.html" />
+        <option value="$PROJECT_DIR$/blog/templates/backend/add_article.html" />
+        <option value="$PROJECT_DIR$/blog/templates/backend/edit_article.html" />
+        <option value="$PROJECT_DIR$/blog/templates/backend/backend.html" />
+        <option value="$PROJECT_DIR$/blog/templates/homesite.html" />
+        <option value="$PROJECT_DIR$/blog/static/css/common.css" />
+        <option value="$PROJECT_DIR$/blog/static/css/style.css" />
+        <option value="$PROJECT_DIR$/blog/utils/helper.py" />
+        <option value="$PROJECT_DIR$/blog/utils/pagination.py" />
+        <option value="$PROJECT_DIR$/blog/templates/login.html" />
+        <option value="$PROJECT_DIR$/blog/templates/index.html" />
+        <option value="$PROJECT_DIR$/blog/templates/home.html" />
+        <option value="$PROJECT_DIR$/blog/templates/base.html" />
+        <option value="$PROJECT_DIR$/blog/views/account.py" />
+        <option value="$PROJECT_DIR$/blog/views/index.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="902" />
+    <option name="y" value="99" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="D:/python第11期/python11期视频/crm视频(115-116)/s11day116-2/day116-2课上所有/pro_crm" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/blog/blog/templates/login.html" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\blog\blog\utils" />
+      <recent name="D:\blog\blog\static" />
+      <recent name="D:\blog\blog" />
+      <recent name="D:\blog\blog\templates" />
+      <recent name="D:\blog\static\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\blog\blog\static\images" />
+      <recent name="D:\blog\blog\static" />
+      <recent name="D:\blog\blog" />
+      <recent name="D:\blog" />
+      <recent name="D:\blog\static\fonts" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.manage">
+    <configuration name="blog" type="PythonConfigurationType" factoryName="Python" singleton="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="blog" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\blog\manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="blog" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.blog" />
+      <item index="1" class="java.lang.String" itemvalue="Python.manage" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.manage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dcd36027-a31e-423a-998f-b308447445a9" name="Default" comment="" />
+      <created>1538393635425</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1538393635425</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2769231" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.102878466" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/blog/views/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
+            <marker date="1538558397731" expanded="true" signature="329:393" ph="select id,ti... article" />
+            <marker date="1538558397731" expanded="true" signature="465:509" ph="select id,ti... article" />
+            <marker date="1538558397731" expanded="true" signature="555:808" ph="SELECT A.id,... id" />
+            <marker date="1538558397731" expanded="true" signature="669:733" ph="SELECT id,ti... article" />
+            <marker date="1538558397731" expanded="true" signature="849:973" ph="SELECT count... article" />
+            <marker date="1538558397731" expanded="true" signature="1058:1086" ph="SELECT COUNT... article" />
+            <marker date="1538558397731" expanded="true" signature="1584:1637" ph="select id fr... user" />
+            <marker date="1538558397731" expanded="true" signature="1951:2190" ph="SELECT A.id,... id" />
+            <marker date="1538558397731" expanded="true" signature="2051:2115" ph="SELECT id,ti... article" />
+            <marker date="1538558397731" expanded="true" signature="2240:2493" ph="SELECT A.id,... id" />
+            <marker date="1538558397731" expanded="true" signature="2354:2418" ph="SELECT id,ti... article" />
+            <marker date="1538558397731" expanded="true" signature="2534:2658" ph="SELECT count... article" />
+            <marker date="1538558397731" expanded="true" signature="2741:2769" ph="SELECT COUNT... article" />
+            <marker date="1538558397731" expanded="true" signature="3201:3287" ph="SELECT id,ti... article" />
+            <marker date="1538558397731" expanded="true" signature="3201:3289" ph="SELECT id,ti... article" />
+            <marker date="1538558397731" expanded="true" signature="3339:3592" ph="SELECT A.id,... id" />
+            <marker date="1538558397731" expanded="true" signature="3453:3517" ph="SELECT id,ti... article" />
+            <marker date="1538558397731" expanded="true" signature="3633:3757" ph="SELECT count... article" />
+            <marker date="1538558397731" expanded="true" signature="3840:3868" ph="SELECT COUNT... article" />
+            <marker date="1538558397731" expanded="true" signature="4247:4292" ph="SELECT title... article" />
+            <marker date="1538558397731" expanded="true" signature="4341:4594" ph="SELECT A.id,... id" />
+            <marker date="1538558397731" expanded="true" signature="4455:4519" ph="SELECT id,ti... article" />
+            <marker date="1538558397731" expanded="true" signature="4635:4759" ph="SELECT count... article" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="41" column="20" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views/account.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding>
+            <marker date="1538553804452" expanded="true" signature="433:473" ph="SELECT id,ti... article" />
+            <marker date="1538553804452" expanded="true" signature="737:763" ph="DELETE FROM article... " />
+            <marker date="1538553804452" expanded="true" signature="737:768" ph="DELETE FROM article... " />
+            <marker date="1538553804452" expanded="true" signature="1346:1375" ph="SELECT id,ti... category" />
+            <marker date="1538553804452" expanded="true" signature="1859:1930" ph="INSERT INTO ARTICLE... " />
+            <marker date="1538553804452" expanded="true" signature="2166:2323" ph="SELECT A.id,... id" />
+            <marker date="1538553804452" expanded="true" signature="2166:2377" ph="SELECT A.id,... id" />
+            <marker date="1538553804452" expanded="true" signature="2166:2386" ph="SELECT A.id,... id" />
+            <marker date="1538553804452" expanded="true" signature="2247:2323" ph="SELECT id,ti... article" />
+            <marker date="1538553804452" expanded="true" signature="2425:2454" ph="SELECT id,ti... category" />
+            <marker date="1538553804452" expanded="true" signature="2937:3009" ph="UPDATE article... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/backend/backend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/static/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/utils/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/utils/pagination.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/css" />
+    <entry file="file://$PROJECT_DIR$/blog/static/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/static/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1303">
+          <caret line="10363" column="4" lean-forward="false" selection-start-line="10363" selection-start-column="4" selection-end-line="10363" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/static/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/static/css/bootstrap.css.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views/login.py" />
+    <entry file="file://C:/Python/Python36/Lib/site-packages/DBUtils/PooledDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="324" column="0" lean-forward="false" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python/Python36/Lib/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/backend/base.html" />
+    <entry file="file://$PROJECT_DIR$/blog/utils/md5.py" />
+    <entry file="file://$PROJECT_DIR$/blog/static/images/background.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/static/kindeditor/asp/demo.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/right_menu.html" />
+    <entry file="file://$PROJECT_DIR$/blog/static/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="4641" column="1" lean-forward="false" selection-start-line="4641" selection-start-column="1" selection-end-line="4641" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/backend/add_article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="36" column="41" lean-forward="true" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/backend/edit_article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/category.html" />
+    <entry file="file://$PROJECT_DIR$/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#57#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/static/fonts/fontawesome-webfont.ttf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/backend/backend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300">
+          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/utils/pagination.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="43" column="10" lean-forward="true" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/static/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/utils/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="76" lean-forward="false" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/static/images/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="53" lean-forward="false" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views/account.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-220">
+          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="27" />
+          <folding>
+            <marker date="1538553804452" expanded="true" signature="433:473" ph="SELECT id,ti... article" />
+            <marker date="1538553804452" expanded="true" signature="737:763" ph="DELETE FROM article... " />
+            <marker date="1538553804452" expanded="true" signature="737:768" ph="DELETE FROM article... " />
+            <marker date="1538553804452" expanded="true" signature="1346:1375" ph="SELECT id,ti... category" />
+            <marker date="1538553804452" expanded="true" signature="1859:1930" ph="INSERT INTO ARTICLE... " />
+            <marker date="1538553804452" expanded="true" signature="2166:2323" ph="SELECT A.id,... id" />
+            <marker date="1538553804452" expanded="true" signature="2166:2377" ph="SELECT A.id,... id" />
+            <marker date="1538553804452" expanded="true" signature="2166:2386" ph="SELECT A.id,... id" />
+            <marker date="1538553804452" expanded="true" signature="2247:2323" ph="SELECT id,ti... article" />
+            <marker date="1538553804452" expanded="true" signature="2425:2454" ph="SELECT id,ti... category" />
+            <marker date="1538553804452" expanded="true" signature="2937:3009" ph="UPDATE article... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="25" column="65" lean-forward="false" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
+            <marker date="1538558397731" expanded="true" signature="329:393" ph="select id,ti... article" />
+            <marker date="1538558397731" expanded="true" signature="465:509" ph="select id,ti... article" />
+            <marker date="1538558397731" expanded="true" signature="555:808" ph="SELECT A.id,... id" />
+            <marker date="1538558397731" expanded="true" signature="669:733" ph="SELECT id,ti... article" />
+            <marker date="1538558397731" expanded="true" signature="849:973" ph="SELECT count... article" />
+            <marker date="1538558397731" expanded="true" signature="1058:1086" ph="SELECT COUNT... article" />
+            <marker date="1538558397731" expanded="true" signature="1584:1637" ph="select id fr... user" />
+            <marker date="1538558397731" expanded="true" signature="1951:2190" ph="SELECT A.id,... id" />
+            <marker date="1538558397731" expanded="true" signature="2051:2115" ph="SELECT id,ti... article" />
+            <marker date="1538558397731" expanded="true" signature="2240:2493" ph="SELECT A.id,... id" />
+            <marker date="1538558397731" expanded="true" signature="2354:2418" ph="SELECT id,ti... article" />
+            <marker date="1538558397731" expanded="true" signature="2534:2658" ph="SELECT count... article" />
+            <marker date="1538558397731" expanded="true" signature="2741:2769" ph="SELECT COUNT... article" />
+            <marker date="1538558397731" expanded="true" signature="3201:3287" ph="SELECT id,ti... article" />
+            <marker date="1538558397731" expanded="true" signature="3201:3289" ph="SELECT id,ti... article" />
+            <marker date="1538558397731" expanded="true" signature="3339:3592" ph="SELECT A.id,... id" />
+            <marker date="1538558397731" expanded="true" signature="3453:3517" ph="SELECT id,ti... article" />
+            <marker date="1538558397731" expanded="true" signature="3633:3757" ph="SELECT count... article" />
+            <marker date="1538558397731" expanded="true" signature="3840:3868" ph="SELECT COUNT... article" />
+            <marker date="1538558397731" expanded="true" signature="4247:4292" ph="SELECT title... article" />
+            <marker date="1538558397731" expanded="true" signature="4341:4594" ph="SELECT A.id,... id" />
+            <marker date="1538558397731" expanded="true" signature="4455:4519" ph="SELECT id,ti... article" />
+            <marker date="1538558397731" expanded="true" signature="4635:4759" ph="SELECT count... article" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆Blog管理后台</title>
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/css/common.css" rel="stylesheet">
+</head>
+<body background="/static/images/background.jpg">
+<div class="container login-page">
+    <div class="row">
+        <div class="col-md-4 col-lg-offset-4">
+
+            <h3 class="text-center">欢迎登陆Blog管理后台</h3>
+            <form class="form-horizontal" role="form" method="post" action="">
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="email">电子邮件</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                            <input class="form-control" id="email" name="email" placeholder="请输入您的电子邮件" required="" type="text" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label" for="password">密码</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                            <input class="form-control" id="password" name="password" placeholder="请输入您的密码" required="" type="password" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9">
+                        <button type="submit" class="btn btn-default">登录</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/static/js/jquery.js"></script>
+<script src="/static/js/bootstrap.js"></script>
+</body>
+</html>

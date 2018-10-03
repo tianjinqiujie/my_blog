@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block index %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 ">
+                <div class="blog-post">
+                    <h4 class="text-center">{{ article_obj.title }}</h4>
+                    <div class="content">
+                        {{ article_obj.content|safe }}
+                    </div>
+                </div>
+                <br/>
+            </div>
+
+            <div class="col-md-1"></div>
+            <div class="col-md-3" style="padding-top: 30px;">
+                <div class="row">
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>CATEGORIES</strong></li>
+                        {% for category in category_list %}
+                            <li class="list-group-item"><a
+                                    href="/category/{{ category.nid }}">{{ category.title2 }}({{ category.b }})</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="row">
+                    <h3>Advertising</h3>
+                    {% for month in month_list %}
+                        <li class="list-group-item"><a href="/month/{{ month.d }}">{{ month.d }}({{ month.c }})</a></li>
+                    {% endfor %}
+                </div>
+
+                <br>
+                <br>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
