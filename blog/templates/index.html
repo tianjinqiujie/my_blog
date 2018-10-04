@@ -1,63 +1,24 @@
 {% extends 'base.html' %}
-
 {% block index %}
-    <!--END INFO SECTION-->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 ">
-                {% for row in data_list %}
-                    <div class="blog-post">
-                        <h2>{{ row.title }}</h2>
-                        <h4>Posted by <a href="#">qiujie</a> on &nbsp;{{ row.create_time }} </h4>
-                        <p>
-                            {{ row.des }}
-                        </p>
-                        <a href="/article_detail/{{ row.id }}" class="btn btn-default btn-lg ">Read More <i
-                                class="fa fa-angle-right"></i></a>
-                    </div>
-                {% endfor %}
-                <br/>
-                <nav aria-label="Page navigation">
-                    <ul class="pagination">
-                        {{ page.page_html()|safe }}
-                    </ul>
-                </nav>
 
+    <div class="col-md-8 ">
+        {% for row in data_list %}
+            <div class="blog-post">
+                <h2>{{ row.title }}</h2>
+                <h4>Posted by <a href="#">qiujie</a> on &nbsp;{{ row.create_time }} </h4>
+                <p>
+                    {{ row.des }}
+                </p>
+                <a href="/article_detail/{{ row.id }}" class="btn btn-default btn-lg ">Read More <i
+                        class="fa fa-angle-right"></i></a>
             </div>
-
-
-            <div class="col-md-1"></div>
-            <div class="col-md-3" style="padding-top: 30px;">
-                <div class="row">
-                    <ul class="list-group">
-                        <li class="list-group-item"><strong>CATEGORY</strong></li>
-                        {% for category in category_list %}
-                            <li class="list-group-item"><a
-                                    href="/category/{{ category.nid }}">{{ category.title2 }}({{ category.b }})</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="row">
-                    <h3>DATE</h3>
-                    {% for month in month_list %}
-                        <li class="list-group-item"><a href="/month/{{ month.d }}">{{ month.d }}({{ month.c }})</a></li>
-                    {% endfor %}
-                </div>
-                <br>
-                <br>
-                <form action="" method="post">
-                    <div class="row input-group">
-                        <input type="text" class="form-control" placeholder="SELECT" aria-describedby="basic-addon2" name="select">
-                        <span class="input-group-addon" id="basic-addon2"> <input type="submit" value="submit"></span>
-                    </div>
-                </form>
-
-
-            </div>
-
-
-        </div>
+        {% endfor %}
+        <br/>
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                {{ page|safe }}
+            </ul>
+        </nav>
     </div>
-
 {% endblock %}
 

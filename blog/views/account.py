@@ -1,16 +1,20 @@
-from flask import Blueprint, render_template, Flask, request, redirect,session
-from ..utils import helper
-import json
 import os
+import json
 from uuid import uuid4
+
+from flask import Blueprint, render_template, Flask, request, redirect,session
+
 from settings import Config
+from ..utils import helper,article_soup
+
+
 
 account = Blueprint('account', __name__)
 
 
 @account.before_request
 def process_request():
-    if not session.get('email'):
+    if not session.get('user_info'):
         return redirect("/login/")
     return None
 
@@ -35,16 +39,15 @@ def delect_article():
 def upload():
     obj = request.files.get("upload_img")
     name = str(uuid4())
-
     path = os.path.join(Config.BASE_DIR, "blog", "static", "upload",name)
     with open(path,'wb') as f:
         for line in obj:
             f.write(line)
+
     res = {
         "error":0,
         "url":"/static/upload/"+name
     }
-
     return json.dumps(res)
 
 
@@ -57,15 +60,7 @@ def add_article():
     title = request.form.get('title')
     content = request.form.get('content')
     cate_id = request.form.get('cate')
-    from bs4 import BeautifulSoup
-    soup = BeautifulSoup(content, "html.parser")
-    # 文章过滤：
-    for tag in soup.find_all():
-        # print(tag.name)
-        if tag.name in ["script", ]:
-            tag.decompose()
-    # 切片文章文本
-    desc = soup.text[0:150]
+    desc = article_soup.article_desc(content)
     helper.insert('INSERT INTO ARTICLE (title,des,content,category_id) VALUE (%s,%s,%s,%s)',(title,desc,content,cate_id))
     return redirect('/backend/')
 
@@ -81,14 +76,7 @@ def edit_article(nid):
     title = request.form.get('title')
     content = request.form.get('content')
     cate_id = request.form.get('cate')
-    from bs4 import BeautifulSoup
-    soup = BeautifulSoup(content, "html.parser")
-    # 文章过滤：
-    for tag in soup.find_all():
-        if tag.name in ["script", ]:
-            tag.decompose()
-    # 切片文章文本
-    desc = soup.text[0:150]
+    desc = article_soup.article_desc(content)
     helper.insert('UPDATE article set title=%s,des=%s,content=%s,category_id=%s WHERE id=%s',(title,desc,content,cate_id,nid))
     return redirect('/backend/')
 
