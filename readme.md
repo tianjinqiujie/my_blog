@@ -55,8 +55,7 @@ pip install -r requirements.txt
 - 启动:
 
 ```
-# 如果你的依赖已经安全完成并且具备运行条件,可以直接在Run下运行manage.py
-# 到Run目录下:
+# 如果你的依赖已经安全完成并且具备运行条件,可以直接运行manage.py
 >>>python manage.py
 ```
 
