@@ -39,4 +39,10 @@ https://www.mypy3.cn/
 
 ## 展示
 
-![1538728843916](C:\Users\qiu\AppData\Roaming\Typora\typora-user-images\1538728843916.png)
+![Alt text](https://github.com/tianjinqiujie/my_blog/Screenshots/1.png)
+
+![Alt text](https://github.com/tianjinqiujie/my_blog/Screenshots/2.png)
+
+![Alt text](https://github.com/tianjinqiujie/my_blog/Screenshots/3.png)
+
+![Alt text](https://github.com/tianjinqiujie/my_blog/Screenshots/4.png)
