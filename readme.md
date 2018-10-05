@@ -41,8 +41,8 @@ https://www.mypy3.cn/
 
 ![Alt text](https://github.com/tianjinqiujie/my_blog/blob/master/Screenshots/1.png)
 
-![Alt text](https://github.com/tianjinqiujie/my_blog/blob/master/Screenshots/1.png)
+![Alt text](https://github.com/tianjinqiujie/my_blog/blob/master/Screenshots/2.png)
 
-![Alt text](https://github.com/tianjinqiujie/my_blog/blob/master/Screenshots/1.png)
+![Alt text](https://github.com/tianjinqiujie/my_blog/blob/master/Screenshots/3.png)
 
 ![Alt text](https://github.com/tianjinqiujie/my_blog/blob/master/Screenshots/4.png)
