@@ -39,10 +39,10 @@ https://www.mypy3.cn/
 
 ## 展示
 
-![Alt text](https://github.com/tianjinqiujie/my_blog/Screenshots/1.png)
+![Alt text](https://github.com/tianjinqiujie/my_blog/blob/master/Screenshots/1.png)
 
-![Alt text](https://github.com/tianjinqiujie/my_blog/Screenshots/2.png)
+![Alt text](https://github.com/tianjinqiujie/my_blog/blob/master/Screenshots/1.png)
 
-![Alt text](https://github.com/tianjinqiujie/my_blog/Screenshots/3.png)
+![Alt text](https://github.com/tianjinqiujie/my_blog/blob/master/Screenshots/1.png)
 
-![Alt text](https://github.com/tianjinqiujie/my_blog/Screenshots/4.png)
+![Alt text](https://github.com/tianjinqiujie/my_blog/blob/master/Screenshots/4.png)
