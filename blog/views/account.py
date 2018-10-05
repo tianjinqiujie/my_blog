@@ -1,8 +1,8 @@
 import os
 import json
 from uuid import uuid4
-
-from flask import Blueprint, render_template, Flask, request, redirect,session
+import markdown
+from flask import Blueprint, render_template, Flask, request, redirect,session,jsonify
 
 from settings import Config
 from ..utils import helper,article_soup
@@ -37,18 +37,20 @@ def delect_article():
 
 @account.route('/upload/',methods=['POST','GET'])
 def upload():
-    obj = request.files.get("upload_img")
+    obj = request.files.get('editormd-image-file')
     name = str(uuid4())
-    path = os.path.join(Config.BASE_DIR, "blog", "static", "upload",name)
+    path = os.path.join(Config.BASE_DIR,'blog',"static", "upload",name)
+    print(path)
     with open(path,'wb') as f:
         for line in obj:
             f.write(line)
 
     res = {
-        "error":0,
-        "url":"/static/upload/"+name
+        'success': 1,
+        'message': u'图片上传成功',
+        'url': "/static/upload/"+name
     }
-    return json.dumps(res)
+    return jsonify(res)
 
 
 @account.route('/backend/add_article/',methods=['POST','GET'])
@@ -57,8 +59,11 @@ def add_article():
         cate_list = helper.fetch_all('SELECT id,title FROM category', [])
         return render_template('backend/add_article.html',cate_list=cate_list)
 
+
     title = request.form.get('title')
-    content = request.form.get('content')
+    content = request.form.get('editormd-html-code')
+    content = markdown.markdown(content,extensions=Config.exts)
+
     cate_id = request.form.get('cate')
     desc = article_soup.article_desc(content)
     helper.insert('INSERT INTO ARTICLE (title,des,content,category_id) VALUE (%s,%s,%s,%s)',(title,desc,content,cate_id))
@@ -74,7 +79,9 @@ def edit_article(nid):
         return render_template('backend/edit_article.html',article_obj=article_obj,cate_list=cate_list)
 
     title = request.form.get('title')
-    content = request.form.get('content')
+    content = request.form.get('editormd-html-code')
+    content = markdown.markdown(content,extensions=Config.exts)
+
     cate_id = request.form.get('cate')
     desc = article_soup.article_desc(content)
     helper.insert('UPDATE article set title=%s,des=%s,content=%s,category_id=%s WHERE id=%s',(title,desc,content,cate_id,nid))

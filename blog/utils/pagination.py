@@ -42,7 +42,6 @@ class Pagination:
         # page_num_list.append('<li><a href="?page={0}">首页</a></li>'.format(1))
         # 添加上一页
         pre_page_num = self.page_num - 1
-        print(pre_page_num)
         if pre_page_num < 1:
             page_num_list.append(
                 '<li style="pointer-events:none"><a href="?page={0}">上一页</a></li>'.format(pre_page_num))

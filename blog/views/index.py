@@ -77,7 +77,7 @@ def month_list(month):
 
 @ind.route('/article_detail/<int:nid>',methods=['POST','GET'])
 def article_detail(nid):
-    select = request.form.get('select')
+
     sql = 'select id from article'
     _, category_list, month_list,select = select_blog(sql)
     if select:
