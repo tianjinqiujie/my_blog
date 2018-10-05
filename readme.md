@@ -34,7 +34,9 @@ https://www.mypy3.cn/
 ## 修改
 
 1. 增加了图片上传
-
 2. 编辑器改为markdown编辑器
-
 3. 增加了代码高亮
+
+## 展示
+
+![1538728843916](C:\Users\qiu\AppData\Roaming\Typora\typora-user-images\1538728843916.png)
