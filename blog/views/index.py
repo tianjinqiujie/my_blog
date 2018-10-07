@@ -8,7 +8,7 @@ ind = Blueprint('ind', __name__)
 def select_blog(sql,*args):
     select = request.form.get('select')
     if select:
-        data_list = helper.fetch_all("select id,title,des,create_time from article WHERE TITLE LIKE %s",
+        data_list = helper.fetch_all("select id,title,des,create_time from article WHERE TITLE LIKE %s order by create_time desc",
                                      ('%'+select+'%',))
     else:
         data_list = helper.fetch_all(sql, (args))
@@ -30,8 +30,8 @@ def page_html(data_list,select):
 
 # @ind.route('/page=<int:page>',methods=['POST','GET'])
 @ind.route('/',methods=['POST','GET'])
-def hello_world():
-    sql = 'select id,title,des,create_time from article'
+def index():
+    sql = 'select id,title,des,create_time from article order by create_time desc'
     data_list, category_list, month_list,select = select_blog(sql)
 
     data_list,page = page_html(data_list,select)
@@ -56,7 +56,7 @@ def login():
 # @ind.route('/category/<int:nid>/page=<int:page>',methods=['POST','GET'])
 @ind.route('/category/<int:nid>',methods=['POST','GET'])
 def category(nid):
-    sql = 'SELECT A.id,A.title,A.create_time,A.des,A.content,CATEGORY.id as nid,CATEGORY.title as title2 FROM (SELECT id,title,create_time,des,content,category_id FROM article) as A LEFT JOIN CATEGORY ON A.category_id=CATEGORY.ID WHERE CATEGORY.id=%s'
+    sql = 'SELECT A.id,A.title,A.create_time,A.des,A.content,CATEGORY.id as nid,CATEGORY.title as title2 FROM (SELECT id,title,create_time,des,content,category_id FROM article) as A LEFT JOIN CATEGORY ON A.category_id=CATEGORY.ID WHERE CATEGORY.id=%s order by create_time desc'
     data_list, category_list, month_list,select = select_blog(sql,nid)
 
     data_list,page = page_html(data_list, select)
@@ -68,7 +68,7 @@ def category(nid):
 @ind.route('/month/<string:month>',methods=['POST','GET'])
 def month_list(month):
 
-    sql = "SELECT id,title,create_time,des FROM article WHERE DATE_FORMAT(create_time,'%%Y-%%m')=%s"
+    sql = "SELECT id,title,create_time,des FROM article WHERE DATE_FORMAT(create_time,'%%Y-%%m')=%s order by create_time desc"
     month, category_list, month_list,select = select_blog(sql,month)
 
     month,page = page_html(month, select)
@@ -76,7 +76,7 @@ def month_list(month):
 
 
 @ind.route('/article_detail/<int:nid>',methods=['POST','GET'])
-def article_detail(nid):
+def article(nid):
 
     sql = 'select id from article'
     _, category_list, month_list,select = select_blog(sql)
@@ -87,5 +87,5 @@ def article_detail(nid):
 
         return render_template('index.html', data_list=article_obj, category_list=category_list, month_list=month_list,page=page.page_html)
     else:
-        article_obj = helper.fetch_one('SELECT title,content from article WHERE id=%s', (nid,))
+        article_obj = helper.fetch_one('SELECT title,create_time,content from article WHERE id=%s', (nid,))
     return render_template('home.html', article_obj=article_obj,category_list=category_list,month_list=month_list)

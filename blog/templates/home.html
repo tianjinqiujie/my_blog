@@ -2,7 +2,8 @@
 {% block index %}
     <div class="col-md-8 ">
         <div class="blog-post">
-            <h4 class="text-center">{{ article_obj.title }}</h4>
+            <h1 class="text-center">{{ article_obj.title }}</h1>
+            <p class="text-center">by <a href="/">qiujie</a> | {{ article_obj.create_time }}</p>
             <div class="content">
                 {{ article_obj.content|safe }}
             </div>
